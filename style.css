@@ -6,26 +6,50 @@
    ROOT VARIABLES
 ========================= */
 :root {
- 
-  /* Farben */
-  --primary-color: #d6002a;
-  --background-color: #ffffff;
-  --text-color: #111827;
- 
-  /* Schriften */
-  --main-font: 'Roboto', sans-serif;
-  --heading-font: 'Bebas Neue', sans-serif;
- 
-  /* Grössen */
-  --h1-size: 40px;
-  --text-size: 16px;
- 
-  /* Abstand */
-  --padding: 16px;
-  --margin: 16px;
- 
-  /* Rundungen */
-  --border-radius: 8px;
+
+    /* Farben */
+    --primary-color: #c1002a;
+    --background-color: #ffffff;
+    --text-color: #111827;
+    --text-light: #f0f0f7;
+    --white: #ffffff;
+    --black: #000;
+
+    /* Schrift */
+    --font-main: "Inter", sans-serif;
+
+    /* H1 */
+    --h1-size: 22px;
+    --h1-weight: 800;
+    --h1-line-height: 108%;
+    --h1-letter-spacing: -0.01em;
+
+    /* H2 */
+    --h2-size: 22px;
+    --h2-weight: 800;
+    --h2-line-height: 110%;
+    --h2-letter-spacing: 0;
+
+    /* H3 / Section Titel */
+    --h3-size: 10px;
+    --h3-weight: 700;
+    --h3-line-height: 100%;
+    --h3-letter-spacing: 0.05em;
+
+    /* Text */
+    --p-size: 13px;
+    --p-weight: 500;
+    --p-line-height: 160%;
+
+    /* Intro */
+    --intro-weight: 700;
+
+    /* Layout */
+    --container-width: 430px;
+    --section-padding: 48px 20px;
+
+    /* Radius */
+    --border-radius: 8px;
 }
  
  
@@ -43,7 +67,7 @@
    BODY
 ========================= */
 body {
-    font-family: var(--main-font);
+    font-family: var(--font-main);
     background: #fff;
     color: #111;
     line-height: 1.6;
@@ -55,7 +79,7 @@ body {
    CONTAINER
 ========================= */
 .container {
-    max-width: 600px;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
  
@@ -162,7 +186,7 @@ header {
 ========================= */
 section {
     position: relative;
-    padding: 60px 20px;
+    padding: var(--section-padding);
 }
  
 section:not(:last-child)::after {
@@ -200,14 +224,25 @@ section:not(:last-child)::after {
 }
  
 h2 {
-    font-size: 26px;
-    font-weight: 800;
+    font-family: var(--font-main);
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    line-height: 110%;
     margin-bottom: 15px;
 }
- 
+
 p {
-    margin-bottom: 12px;
+    font-family: var(--font-main);
+    font-size: var(--p-size);
+    font-weight: var(--p-weight);
+    line-height: 160%;
     color: #444;
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    font-weight: var(--intro-weight);
+    font-style: italic;
 }
  
  
@@ -346,12 +381,12 @@ p {
    PARTNER
 ========================= */
 .partner-section {
-    background: #111;
-    color: #fff;
+    background: #fff;
+    color: #111;
 }
  
 .partner-section h2 {
-    color: #fff;
+    color: #111;
 }
  
 .partner-container {
@@ -413,9 +448,9 @@ textarea {
 ========================= */
  
 .uhp-red-section{
-    background:#c4002f;
+    background:#c1002a;
     padding:60px 20px;
-    color:#fff;
+    color:#ffff;
 }
  
 .red-small-title{
@@ -559,10 +594,11 @@ textarea {
    FOOTER
 ========================= */
 footer {
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #111;
     text-align: center;
     padding: 30px 20px;
+    border-top: 1px solid #e5e7eb;
 }
  
 .footer-links {
@@ -573,7 +609,7 @@ footer {
 }
  
 .footer-links a {
-    color: #fff;
+    color: #111;
     font-size: 12px;
     text-decoration: none;
 }
@@ -588,8 +624,8 @@ footer {
 }
  
 .uhp-box {
-    background: #f1f1f3;
-    border-top: 4px solid var(--primary-color);
+    background: #f0f0f7;
+    border-top: 4px solid 4px solid #c4002f;
     border-radius: 8px;
     padding: 30px 28px;
     max-width: 600px;
