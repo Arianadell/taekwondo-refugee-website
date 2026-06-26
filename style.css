@@ -157,6 +157,7 @@ header {
 
     color: #fff;
 }
+
 .hero-image {
     position: absolute;
     inset: 0;
@@ -221,6 +222,7 @@ section:not(:last-child)::after {
     height: 1px;
     background: rgba(0,0,0,0.08);
 }
+
  
  
 /* =========================
@@ -482,14 +484,10 @@ textarea {
     font-weight: 700;
     border-radius: 4px;
 }
+
  
  
- 
- 
- 
- 
- 
- 
+
  
 /* =========================
    RED SECTION
@@ -628,17 +626,9 @@ textarea {
     font-size:12px;
     color:rgba(255,255,255,0.9);
 }
+
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  
 /* =========================
    FOOTER
@@ -667,7 +657,6 @@ footer{
 /* =========================
    UHP GREY BOX
 ========================= */
- 
 
  
 .uhp-box{
@@ -700,19 +689,10 @@ footer{
     line-height:1.7;
     margin-bottom:12px;
 }
+
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  
  .grey-section{
     background:#f0f0f7;
